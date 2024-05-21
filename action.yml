@@ -10,4 +10,4 @@ runs:
   args:
     - "/missing-directory/"
   entrypoint: '/entrypoint.sh'
-  post-entrypoint: '/entrypoint.sh'
+  post-entrypoint: '/post-entrypoint.sh'
