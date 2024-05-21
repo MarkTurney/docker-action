@@ -1,0 +1,7 @@
+name: 'Docker Action Testing'
+description: 'testing docker actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: 'echo " ++++++ HIT THE ENTRYPOINT!!! ++++++"'
+  post-entrypoint: 'echo " ++++++ HIT THE POST-ENTRYPOINT!!! ++++++"'
