@@ -7,5 +7,7 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  entrypoint: 'echo " ++++++ HIT THE ENTRYPOINT!!! ++++++"'
-  post-entrypoint: 'echo " ++++++ HIT THE POST-ENTRYPOINT!!! ++++++"'
+  args:
+    - "/missing-directory/"
+  entrypoint: '/entrypoint.sh'
+  post-entrypoint: '/entrypoint.sh'
