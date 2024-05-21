@@ -1,5 +1,9 @@
 name: 'Docker Action Testing'
 description: 'testing docker actions'
+inputs:
+  path:
+    description: 'A list of files, directories, and wildcard patterns to cache and restore'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
