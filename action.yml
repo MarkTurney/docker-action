@@ -9,6 +9,8 @@ runs:
   image: 'Dockerfile'
   args:
     - "/missing-directory/"
+  pre: '/pre-entrypoint.sh'
   pre-entrypoint: '/pre-entrypoint.sh'
   entrypoint: '/entrypoint.sh'
+  post: '/post-entrypoint.sh'
   post-entrypoint: '/post-entrypoint.sh'
