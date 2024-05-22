@@ -1,16 +1,14 @@
 name: 'Docker Action Testing'
 description: 'testing docker actions'
-inputs:
-  path:
-    description: 'A list of files, directories, and wildcard patterns to cache and restore'
-    required: true
+# inputs:
+#   path:
+#     description: 'A list of files, directories, and wildcard patterns to cache and restore'
+#     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - "/missing-directory/"
-  pre: '/pre-entrypoint.sh'
+  # args:
+  #   - "/missing-directory/"
   pre-entrypoint: '/pre-entrypoint.sh'
   entrypoint: '/entrypoint.sh'
-  post: '/post-entrypoint.sh'
   post-entrypoint: '/post-entrypoint.sh'
